@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    flex-grow: 2;
+}
+.sidebar{
+    width: 80px;
+    height: 80px;
+}
+.content{
+    margin: 50px;
+    height: 80px;
+    width: 500px;
+}
+.blue{
+    background-color: blue;
+}
+.header{
+    margin-top: 10px; 
+}
+.sidebar{
+   width: 730px;
+   margin: 20px;
+}
+.header{
+    margin-top: 5px;
+}
+.sidebar{
+    width: 197vh;
+}
+

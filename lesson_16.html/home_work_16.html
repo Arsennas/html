@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            left: 8px;
+            background-color: black;
+            animation-name: pop-animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes pop-animation{
+0%,100%{
+    left: 8px;
+}
+50%{
+    left: 400px;
+transform: rotate(360deg);
+}
+        }
+        img{
+            height: 200px;
+            width: 250px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/193/929/small/vintage-car.png" alt="">
+    </div>
+</body>
+</html>

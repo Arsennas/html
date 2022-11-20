@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .container {
+            background-color: skyblue;
+            padding: 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 150px 150px 150px;
+            grid-template-areas: 
+            ". number1 number1"
+            "number2 number2 ."
+            ". number3 number3"
+        }
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background-color: red;
+            margin: 10px;
+        }
+        .area1 {
+            grid-area: number1;
+        }
+        .area2 {
+            grid-area: number2;
+        }
+        .area3 {
+            grid-area: number3;
+        }
+        .area4 {
+            grid-area: number4;
+        }
+        .area5 {
+            grid-area: number5;
+        }
+        .area6 {
+            grid-area: number6;
+        }
+        .area7 {
+            grid-area: number7;
+        }
+        .area8 {
+            grid-area: number8;
+        }
+        .area9 {
+            grid-area: number9;
+        } */
+        .container{
+background-color: lightgray;
+padding: 10px;
+        }
+        .flax{
+          background-color: blue;
+          height: 50px;  
+        }
+        button{
+            margin: 15px;
+            background-color: gray;
+            color: white;
+        }
+        .content{
+border: 15px solid lightgray ;
+            padding: 15px;
+background-color: greenyellow;
+display: grid;
+grid-template-columns: 2fr 3fr 1fr;
+grid-template-rows: 250px 150px 0px;
+gap:10px; 
+grid-template-areas: "b1 b2 b3"
+"b4 b4 b6";
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: green;
+        }
+        .areab1{
+            grid-area:b1;
+        }
+        .areab2{
+            grid-area: b2;
+        }
+        .areab3{
+            grid-area:b3;
+        }
+        .areab4{
+            grid-area: b4;
+        }
+        .areab5{
+            grid-area: b5;
+            display: none;
+        }
+        .areab6{
+            grid-area: b6;
+        }
+        .footer{
+            background-color:  lightgray; 
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px 0px 0px;
+            gap: 20px;
+            padding: 10px;
+        }
+        .index{
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="item area1">1</div>
+        <div class="item area2">2</div>
+        <div class="item area3">3</div>
+        <div class="item area4">4</div>
+        <div class="item area5">5</div>
+        <div class="item area6">6</div>
+        <div class="item area7">7</div>
+        <div class="item area8">8</div>
+        <div class="item area9">9</div>
+    </div> -->
+ <div class="container">
+    <div class="header">
+        <div class="flax">
+            <button>open pop-up button</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="item areab1">1</div>
+        <div class="item areab2">2</div>
+        <div class="item areab3">3</div>
+        <div class="item areab4">4</div>
+        <div class="item areab5">5</div>
+        <div class="item areab6">6</div>
+    </div>
+    <div class="footer">
+        <div class="index"></div>
+        <div class="index"></div>
+        <div class="index"></div>
+        <div class="index"></div>
+    </div>
+ </div>
+ 
+ 
+</body>
+
+</html>

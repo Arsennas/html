@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    
+    <script>
+       // console.log(a) // output undefined
+      // var a = 'hello world';
+      // console.log(a) // output hello world
+
+      // var a = 'hello world'; // 1 вариант
+      // var a = 'privet mir'; // 2 вариант
+      // console.log(a) // output 2 вариант
+
+      // var до esmascript
+      // javascript обновлен 2005года изменил названия на esmacript
+      // let, const esmascript 2005год
+
+      // let a = 'hello world'; // базовое состояние
+      // // 100 код улук написал
+      // let b = 'privet mir'; // базовое состояние
+      // // до изменение output
+      // console.log(a, ' до изменение >>a') // output hello world
+      // console.log(b, ' до изменение >>b') // output privet mir
+
+      // // syntax изменение
+      // a = 'privet mir'
+      // b = 'hello world'
+
+      // console.log(a, ' после изменение >>a') // output privet mir
+      // console.log(b, ' после изменение >>b') // output hello world
+
+      // let a = 10 // базовое состояние 10
+      // console.log(a) // output 10
+
+      // // после изменение
+      // a = 20
+      // console.log(a+5) // output 25
+      // a+10
+      // console.log(a) // output 20
+      // a = a + 5; // output 25
+      // a = a - 10; // output 15
+      // a+5
+      // console.log(a+5) // output  20
+
+      // a+= 5 // output 20
+      // a-=10 // output 10
+      // console.log(a) // output 10
+
+      // до esmascript
+      // a = a + 5;
+      // esmascript
+      // a+= 5
+
+      // let a = null // пустой
+      // let b = undefined // не установлено
+      // console.log(c) // output c is not defined
+      // console.log(b) // output undefined
+      // console.log(a) // output null
+      // let a = null; // базовое состоение пока пустой
+
+      // после клика вывести на экран какое то текст примерно привет
+      // a = 'privet'
+
+      // const nameCompany = 'ITC bootcamp'; // базовое состояние
+      // не сможем изменить состояние
+      // nameCompany = 'IT academy';
+
+      // console.log(nameCompany) // output будет ощибка
+
+      // string number undefined null boolean
+
+      // boolean output true или false правда или не правда
+
+      // операторы
+      // + - = * / ++ -- += -= *= /=
+
+      // условные операторы
+      // == просто равно
+      // === строгий равно
+      // > больше
+      // < меньше
+      // >= больше или равно
+      // >= меньше или равно
+      // !== не равно
+
+      // console.log(1 == 1); // output true
+      // console.log(1 == 2); // output false
+      // console.log(1 == "1"); // output true
+      // console.log(1 === "1"); // output false
+      // console.log(1 > "1"); // output false
+      // console.log(1 >= "1"); // output true
+      // console.log(1 < 2); // output true
+      // console.log(1 <= 2); // output true
+      // console.log(1 !== 1); // output false
+
+      // let a = 'A';
+      // let b = 'A';
+
+      // if (a == b) {
+      //   // если условия будет true 
+      //   console.log('правда') // output
+      // } else {
+      //    // если условия будет false 
+      //   console.log('не правда') // output
+      // }
+
+      // let name = 'Asan';
+
+      // if("Asan" == name) {
+      //   console.log(true) // 
+      // } else {
+      //   console.log(false)
+      // }
+
+      // let a = 1;
+      // if(a > 10){
+      //   console.log(true)
+      // } else {
+      //   console.log(false)
+      // }
+      // let textInput = prompt('');
+      // let name = 'Oroz';  
+      // // console.log(name.toLowerCase()) // oroz
+      // if(textInput == name.toLowerCase()) {
+      //   console.log(`hello ${textInput}`)
+      // } else {
+      //   console.log('error')
+      // }
+
+      // let number = +prompt('number'); 
+      // if(number > 18 ){
+      //   console.log('ты взрослый')
+      // } else {
+      //   console.log('ты маленький')
+      // }
+
+
+      // let login = prompt('login');
+
+      // if(login === 'Asan') {
+      //   console.log('hello Asan')
+      // } else if (login === 'Uson') {
+      //   console.log('hello Uson')
+      // } else if(login === 'Marat') {
+      //   console.log('hello Marat')
+      // } else {
+      //   console.log('error')
+      // }
+      // let number = +prompt('сколько тебе лет?')
+      
+      // до 6 малыш 
+      // до 18 школьник 
+      // до 25 студент 
+      // до 35 работник 
+      // до 50 директор 
+      // после 60 пенсионер 
+      // после 100 жить невозможно
+      // if (number <= 6) {
+      //   console.log('малыш')
+      // } else if(number <= 18) {
+      //   console.log('школьник')
+      // } else if(number <= 25) {
+      //   console.log('студент')
+      // } else if (number <= 35) {
+      //   console.log('работник')
+      // } else if (number <= 50) {
+      //   console.log('директор')
+      // } else if (number >= 60, number <=100) {
+      //   console.log('пенсионер')
+      // } else if(number >= 100) {
+      //   console.log('жить невозможно')
+      // }
+      // && ||
+      let login = prompt('login');
+      let password = +prompt('password');
+      if(
+      (login === "Asan" && password === 1234) || 
+      (login === "Uson" && password === 4321) ||
+      (login === "marat" && password === 4567) 
+      ) {
+        console.log(`hello ${login}`);
+      }else{
+        console.log('error')
+      }
+      
+
+    //   let confirm1 = confirm('tebe 18+?');
+    //   if(confirm1) {
+    //     console.log('доступ открыто')
+    //   let text = confirm('ты курищь');
+    //     if (text){
+    //       console.log('')
+    //   let number = +prompt("канча жылдан бери чылып чегесин")
+    //      if(number <= 2) {
+    //         console.log('сен тамеки таштасан болот')
+    //     }else if(number >= 2) {
+    //         console.log('ден-соолукту начарлатыпсын')
+    //       }
+    //     }else{
+    //     console.log('ты молодец')
+    //   }
+    // }else{
+    //       console.log('доступ закрыто')
+    //     }
+    </script>
+</body>
+</html>

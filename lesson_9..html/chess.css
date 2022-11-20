@@ -1,0 +1,28 @@
+.chess{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+}
+.reverse{
+    transform: rotate(180deg);
+}
+.item{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.number{
+    background-color: red;
+    color: white;
+}
+.black{
+    background-color: black;
+}
+.white{
+    background-color: white;
+}
