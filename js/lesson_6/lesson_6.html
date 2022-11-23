@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+  <script>
+    let questions = [
+      {question: 'КР президенти ким?', output: 'Садыр Жапаров', score: 2},
+      {question: 'Кыргызстанда канча область бар?', output: '7', score: 2},
+      {question: 'Озгон району кайсы областка кирет', output: 'Ош', score: 2},
+      {question: 'Бетховин ким болгон?', output: 'Композитор', score: 2},
+      {question: 'Узбекистандын борбор шаары кайсы', output: 'Ташкент', score: 2}
+    ]
+    // вопростор порядка менен промптон чыгыш керек
+    // вопростор условияга туура келиш керек
+    // туура келген вопростордун баллын эсептеш керек
+    // туура жана туура эместердин санын эсептеш керек
+    
+    let total = 0;
+    let correct = 0;
+    let notCorrect = 0;
+
+    let arrCorect = []
+    arrCorect.push(correct)
+    console.log(arrCorect)
+
+    let arrNotCorect = []
+    arrNotCorect.push(notCorrect)
+    console.log(arrNotCorect)
+
+    for(let i = 0; i < questions.length; i++){
+      let question = prompt(questions[i].question) 
+      if(question === questions[i].output){
+        total = total + questions[i].score
+        correct++
+      }else{
+        notCorrect++
+      }
+    }
+
+    console.log('общий тотал >>> ', total); 
+    console.log('правильные ответы >>> ', correct)
+    console.log('не правильные ответы >>> ', notCorrect)
+
+
+//     let arr = [];
+
+// // before push
+// // console.log('before push >> ', arr)
+// // arr.push('apple', 'lemon');
+
+// // // after push
+// // console.log('after push>> ', arr)
+// let arr2 = ['apple', 'lemon']
+// arr2.push('arbuz')
+// console.log(arr2)
+// for(let i = 0; i < 100; i++) {
+//   if(i % 7 == 0) {
+//     arr.push(i)
+//   }
+// }
+  </script>
+</body>
+</html>

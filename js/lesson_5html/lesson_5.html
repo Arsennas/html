@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+
+
+
+  <script>
+// let numbers = [1,3,5,10,25,100,32,51,5]
+// for( let i = 0; i <numbers.length; i++){
+//   if(numbers[i] === 100 || numbers[i] === 32) {
+// console.log(numbers[i])
+// break
+//   }
+// }
+
+// let i = 0;
+// for(i ; i <10; i++){
+// }
+// console.log(i)
+
+
+      let Male = 0;
+      let Female = 0;
+      let maxAgeMale = 0;
+      let maxAgeFemale = 0;
+
+      let members  = [
+        {gender: 'Male', age: 23},
+        {gender: 'Female', age: 24},
+        {gender: 'Male', age: 32},
+        {gender: 'Female', age: 18},
+        {gender: 'Male', age: 30},
+        {gender: 'Female', age: 40},
+        {gender: 'Male', age: 55},
+        {gender: 'Female', age: 60},
+        {gender: 'Male', age: 70},
+        {gender: 'Female', age: 15},
+        {gender: 'Male', age: 45},
+        {gender: 'Female', age: 85},
+        {gender: 'Male', age: 80},
+        {gender: 'Female', age: 5},
+      ]
+      for(let i = 0; i <members.length; i++){
+      if('Male' === members[i].gender) {
+        Male++
+        if(maxAgeMale < members[i].age){
+          maxAgeMale = members[i].age
+        }
+        }
+        if('Female' === members[i].gender){
+          Female++
+          if(maxAgeFemale < members[i].age){
+            maxAgeFemale = members[i].age 
+          }
+      }
+    }
+
+      console.log('male >>> ', Male) // output 5
+      console.log('female >>> ', Female) // output 5
+      console.log('maxAgeMale >>> ', maxAgeMale) // output 70
+      console.log('maxAgeFeMale >>> ', maxAgeFemale) // output 60
+  </script>
+</body>
+</html>
