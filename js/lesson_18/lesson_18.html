@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- асинхронный и синхронный запрос -->
+  <script>
+    // синхронный
+    fetch('https://swapi.dev/api/people/1/')
+      .then(response => {
+        // console.log(response)
+        return response.json()
+      })
+      .then(data => {
+        console.log("1 >> ", data.name)
+      })
+      fetch('https://swapi.dev/api/people/2/')
+      .then(response => {
+        // console.log(response)
+        return response.json()
+      })
+      .then(data => {
+        console.log("2 >> ", data.name)
+      })
+      fetch('https://swapi.dev/api/people/3/')
+      .then(response => {
+        // console.log(response)
+        return response.json()
+      })
+      .then(data => {
+        console.log("3 >> ", data.name)
+      })
+
+  
+// асинхронный запррс
+    const f1 = async () => {
+      const res = await fetch('https://swapi.dev/api/people/1/')
+      return res.json()
+    }
+    const f2 = async () => {
+      const res = await fetch('https://swapi.dev/api/people/2/')
+      return res.json()
+    }
+    const f3 = async () => {
+      const res = await fetch('https://swapi.dev/api/people/3/')
+      return res.json()
+    }
+    const getData = async () => {
+      const data3 = await f3().then(data => console.log("3 async >> ", data.name))
+      const data2 = await f2().then(data => console.log("2 async >> ", data.name))
+      const data1 = await f1().then((data) => {
+          console.log("1 async >> ", data.name)
+      })
+    }
+    getData()
+  </script>
+</body>
+</html>

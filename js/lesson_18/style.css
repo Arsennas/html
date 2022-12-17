@@ -1,0 +1,22 @@
+.auth{
+  border: 2px solid black;
+  display: inline-block;
+  padding:30px 60px;
+}
+.auth h1{
+  text-align: center;
+}
+.form-input label{
+display: block;
+margin-top: 7px;
+}
+.auth button{
+  display: block;
+  margin-top: 10px;
+  border-radius: 7px;
+  margin-left: 60px;
+}
+.auth a{
+  margin-left: 62px;
+  margin-top: 10px;
+}

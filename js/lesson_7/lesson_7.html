@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+
+  <script>
+
+  //   let users = [
+  //     { name: 'Asan', pin: 1234, balance: 12000, id: 1 },
+  //     { name: 'Uson', pin: 4321, balance: 22000, id: 2 },
+  //     { name: 'Hasan', pin: 123, balance: 2000, id: 3 },
+  //     { name: 'Husan', pin: 12345, balance: 5000, id: 4 },
+  //     { name: 'Marat', pin: 9876, balance: 8000, id: 5 },
+  //     { name: 'Arsen', pin: 5678, balance: 20000, id: 6 },
+  //   ];
+
+  //   let pinCode = +prompt('pin code')
+
+  //   for (let i = 0; i < users.length; i++) {
+  //     if (users[i].pin == pinCode) {
+  //       alert(`hello ${users[i].name}`);
+  //     let a = confirm('хотите продолжить?')
+  //     if (a) {
+  //       alert(users[i].balance)
+  //       if (confirm('хотите снять?')) {
+  //         a = prompt('сколько хотите снять?')
+  //         a -= users[i].balance
+  //         alert(a)
+  //         if(a > users.balance){
+  //           alert('не достаточно средств')
+  //         }
+  //         break
+  //       }
+  //     } else {
+  //       break;
+  //     }
+  //   }
+  // }
+      // после условия если правильно то тогда следующий
+      // привет user >>  name alert()
+      // confirm хотите продолжать? отмена или да
+      // если да сумма пользователя показать на alert()
+      // если отмена то тогда остановить программу
+      // confirm хотите снимать отмена или да
+      // есле да prompt("сколько хотели снимать?")
+      // 5000 снимать етсе анда асан акчасы 7000 сом калыш кк
+      // alert('') остаток сумму
+
+      // let a = 'Mozilla'
+      // console.log(a.substr(1,2)) //oz
+      // console.log(a.substr(-4)) //illa
+      // console.log(a.substr(0))
+
+    let operators = [
+          {operator: 'Megacom', code: '559'},
+          {operator: 'Megacom', code: '558'},
+          {operator: 'Megacom', code: '557'},
+          {operator: 'Megacom', code: '556'},
+          {operator: 'Megacom', code: '555'},
+          {operator: 'Megacom', code: '554'},
+          {operator: 'Megacom', code: '553'},
+          {operator: 'Megacom', code: '552'},
+          {operator: 'Megacom', code: '551'},
+          {operator: 'Beeline', code: '779'},
+          {operator: 'Beeline', code: '778'},
+          {operator: 'Beeline', code: '777'},
+          {operator: 'Beeline', code: '776'},
+          {operator: 'Beeline', code: '775'},
+          {operator: 'Beeline', code: '774'},
+          {operator: 'Beeline', code: '773'},
+          {operator: 'Beeline', code: '772'},
+          {operator: 'Beeline', code: '771'},
+          {operator: 'Beeline', code: '770'},
+        ];
+
+        let numbers = prompt("number phone")
+        if(
+          (numbers[0] === '0' && numbers.length === 10) || 
+         (numbers.substr(0,3) === '+996' && numbers.length === 13)||
+         (numbers.substr(0,2) === '996' && numbers.length === 12)
+         ) {
+          let operators = numbers.substr(-9)
+          let subs = numbers.substr(1, 3);
+        for(let i = 0; i < operators.length; i++){
+          if(subs === operators[i].code){
+            console.log(operators[i].operator)
+            break
+          }
+        }
+        } else{
+            console.log('invalid')
+        }
+  </script>
+</body>
+</html>

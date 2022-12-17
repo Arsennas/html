@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+  <style>
+    .div{
+      background-color: black;
+      padding: 10px;
+      display: inline-block;
+    }
+    .red,.green,.yellow{
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid white;
+      margin: 5px;
+    }
+    .yellow{
+      background-color: yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- <h1 id="title" class="h1">hello world</h1>
+  <h1 id="title1" class="h1">hello world</h1>
+  <h1 id="title2" class="h1">hello world</h1>
+  <h1 id="title3" class="h1">hello world</h1>
+  <h1 id="title4" class="h1">hello world</h1>
+  <span>hello span</span>
+  <span>hello span</span>
+  <span>hello span</span>
+  <span>hello span</span>
+  <span>hello span</span>
+  <span>hello span</span>
+  <h2>hello itc</h2>
+  <div class="box"></div>
+  <div class="box"></div> -->
+  <h1></h1>
+  <div class="div">
+    <div id="red" class="red"></div>
+    <div class="yellow"><span id="timer">10</span></div>
+    <div id="green" class="green"></div>
+  </div>
+  <script>
+    // alert('hello world')
+    // DOM Document OBJECT MODAL
+
+  // metods
+  //  getElementsByTagName()
+  //  getElementsByClassName()
+  // getElementById()
+  // document.getElementsByTagName('h1')[0].innerText = 'privet mir';
+  // document.getElementsByTagName('h1')[1].innerHTML = 'hello h2';
+  // document.getElementsByTagName('h1')[2];
+  // document.getElementsByTagName('h1')[3];
+  // document.getElementsByTagName('h1')[4];
+
+    // let texts = document.getElementsByTagName('h1');
+    // let textsClass = document.getElementsByClassName('h1')
+
+    // variant byid
+    // let title = document.getElementById('title')
+    // let title1 = document.getElementById('title1')
+    // let title2 = document.getElementById('title2')
+    // let title3 = document.getElementById('title3')
+    // let title4 = document.getElementById('title4')
+
+
+    // variant tagname
+    // texts[0].innerText = 'hello h1 1'
+    // texts[1].innerText = 'hello h1 2'
+    // texts[2].innerText = 'hello h1 3'
+    // texts[3].innerText = 'hello h1 4'
+    // texts[4].innerText = 'hello h1 5'
+
+    // classname variant
+    // textsClass[0].innerText = 'hello h1 1'
+    // textsClass[1].innerText = 'hello h1 2'
+    // textsClass[2].innerText = 'hello h1 3'
+    // textsClass[3].innerText = 'hello h1 4'
+    // textsClass[4].innerText = 'hello h1 5'
+
+    // меняем стилб
+    // textsClass[0].style.color= 'red'
+    // textsClass[1].style.color= 'blue'
+    // textsClass[2].style.color= 'white'
+    // textsClass[3].style.color= 'yellow'
+    // textsClass[4].style.color= 'red'
+
+    // let box = document.getElementsByClassName('box');
+
+    // box[0].style.width = '500px'
+    // box[0].style.height = '500px'
+    // box[0].style.backgroundColor = 'red'
+    // box[1].style.width = '500px'
+    // box[1].style.height = '500px'
+    // box[1].style.backgroundColor = 'green'
+    // box[1].style.borderRadius = '50%'
+
+    // планирование setInterval() setTimeout()
+
+    // 1 variant
+    // const myFunc = () => {
+    //   console.log('1')
+    // }
+    // setInterval(myFunc, 1000) 
+    
+    // 2 variant
+    // setInterval(() => {
+    //   console.log('1')
+    // }, 100)
+
+    // let texts = document.getElementsByTagName('h1')[0];
+    // let i = 0
+    //   let a = 18
+    //   let colors =['green','red','balck','orange']
+    //   let j = 0
+    // setInterval(() => {
+    // text.innerText = i
+    //   text.style.fontSize = `${a}px`
+    //   text.style.color = colors [j]
+    //   a+=10
+    // if(i == 10){
+    // i = 0
+    // }else{
+    //   i++
+    // }
+    // if(j === 3){
+    //   j = 0
+    // }else{
+    //   j++
+    // }
+    // }, 1000)
+
+    let h1 = document.getElementsByTagName('h1')
+    let timer = document.getElementById('timer')
+    let time = 10
+    let green = document.getElementById('green')
+    let red = document.getElementById('red')
+    let i = 0
+    let text = 'hello'
+   setInterval(() => {
+    timer.innerText = time
+    if(time === 0){
+      time = 10
+      text = text === 'hello' ? 'privet' : 'hello' 
+    }else{
+      time--
+    }
+    setTimeout(() => {
+    if(time < 5){
+      timer.style.display = 'none'
+    }
+    }, 500)
+    timer.style.display = 'block'
+    if(text === 'hello'){
+      red.style.backgroundColor = 'red'
+      green.style.backgroundColor = 'black'
+    }else if(text === 'privet'){
+      red.style.backgroundColor = 'black'
+      green.style.backgroundColor = 'green'
+    }
+   },1000)
+  </script>
+</body>
+</html>

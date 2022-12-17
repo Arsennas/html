@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+  
+  <script>
+    // let object = {
+    //   name: "Asan",
+    //   password:'1234'
+    // }
+    // const myFunc = (object) => {
+    //   console.log(object.name === "Asan" && object.password === '1234' ? 'hello Asan' : 'error')
+    // }
+    // myFunc(object)
+
+    // console.log(arr.sort((a, b) => a - b))//output 
+
+    // let items = [
+    //   {name : 'Edvard', value:21},
+    //   {name : 'Sharpe', value:37},
+    //   {name : 'And', value:45},
+    //   {name : 'The', value:-12},
+    //   {name : 'Edvard', value:21},
+    //   {name : 'Magnetic', value: 39},
+    //   {name : 'Edvard', value:37},
+    // ];
+//     let a = items.sort((elem1,elem2) => {
+// if(elem1.name > elem2.name){
+//   return 1;
+// }
+// if(elem1.name < elem2.name){
+//   return -1;
+// }
+// return 0;
+//     } );
+//     console.log(a);
+
+//     let i = items.sort((a, b) => {
+//      return a.value - b.value
+//     } );
+//     console.log(i)
+
+// items.map((element, index) => {
+//   console.log(index, element)
+// }
+// )
+
+        let members  = [
+        {gender: 'Male', age: 23},
+        {gender: 'Female', age: 24},
+        {gender: 'Male', age: 32},
+        {gender: 'Female', age: 18},
+        {gender: 'Male', age: 30},
+        {gender: 'Female', age: 40},
+        {gender: 'Male', age: 55},
+        {gender: 'Female', age: 60},
+        {gender: 'Male', age: 70},
+        {gender: 'Female', age: 15},
+        {gender: 'Male', age: 45},
+        {gender: 'Female', age: 85},
+        {gender: 'Male', age: 80},
+        {gender: 'Female', age: 5},
+      ];
+      // let a = members.filter((element, index) => element.gender === 'Male'
+      // )
+      // console.log(a);
+
+      // let b = members.filter((element, index) => element.gender === 'Female'
+      // )
+      // console.log(b)
+
+      // let i = age.sort((c , d) => {
+      //   return c.age > d.age
+      // })
+      // console.log(i)
+
+// let index = members.findIndex((element, index) => index === 4);
+// console.log(index)
+// let before = members.slice(0,4)
+      // esmascript vs javascript
+
+      // javascript
+      // var function
+
+      // let const сокрошенные условые стрелычные функции
+      // if( 1 == 2) {
+      //   console.log(true)
+      // }
+      // console.log(1 == 2 ? true : false)
+      // let login = prompt('login');
+      // alert(login === 'Asan' ? 'hello' : 'error' )
+      // muFunc()
+      // muFunc()
+
+      // function muFunc () {
+      //   console.log('hello world')
+      // }
+      // muFunc()
+
+      // arr methods
+
+      // push(), pop(), unshift() shift()
+      // sort() map() filter() find() findIndex()
+
+      let arr = [-1, 0, 10, 21, 32, 3, 8, 9];
+
+      // до esmascript
+      // console.log(
+      //   arr.sort(function (a, b) {
+      //     return a - b;
+      //   })
+      // );
+
+      // esmascript
+      // console.log(arr.sort((a, b) => a - b)); // output -1, 0, 3, 8, 9, 10, 21, 32
+
+      // for(let i = 0; i < items.length; i++) {
+      //   console.log(items[i])
+      // }
+      // items.map((element, index) =>  {
+      //   console.log(index, element)
+      // })
+      // items.filter((element, index) => {
+      //   console.log(index, element);
+      // });
+      let a = items.filter((element, index) => element.name === "Edward");
+      let b = items.filter((element, index) => element.value >= 37);
+
+      // console.log(b);
+      // pop() unship()
+      // members[4].age = 45
+      // console.log(members)
+      // let before  = members.slice(0, 4)
+      // let after = members.slice(5)
+      // console.log(before)
+      // console.log(after)
+
+      // console.log(newArr)
+
+      // find исползуем добавить корзину
+      // members.find((element) => {
+      //   console.log(element)
+      // })
+
+      // findIndex изменение или удаление
+      // members.findIndex((element, index) => {
+      //   console.log(element)
+      // })
+
+      // этот код для удаление
+      // let index = members.findIndex((element, index) => index === 7);
+      // let before = members.slice(0, index);
+      // let after = members.slice(index + 1);
+      // let newArr = [...before, ...after];
+      // console.log('before >>> ', members);
+      // console.log('after >>> ', newArr);
+
+      let index = members.findIndex((element, index) => index === 4);
+      let before = members.slice(0, index);
+      let after = members.slice(index + 1);
+      let newArr = [...before, {...members[index], age: 45}, ...after];
+      // console.log('before >>> ', members);
+      // console.log('after >>> ', newArr);
+
+      // для удаление элемента
+      let newArr2 = members.filter((element, index) => index !== 4)
+      console.log('before >>> ', members);
+      console.log('after >>> ', newArr2);
+  </script>
+</body>
+</html>

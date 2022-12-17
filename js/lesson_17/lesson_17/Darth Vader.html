@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .menu{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <a href="./Luke Skywalker.html">Luke Skywalker</a>
+    <a href="./C-3PO.html">C-3PO</a>
+    <a href="./R2-D2.html">R2-D2</a>
+    <a href="./Darth Vader.html">Darth Vader</a>
+   <a href="./Leia Organa.html">Leia Organa</a>
+
+   </div>
+   <h1 id="title"></h1>
+   <ol id="list">
+ 
+   </ol>
+   <script>
+     let text = document.getElementById('text')
+     let title = document.getElementById('title')
+     let list = document.getElementById('list')
+     fetch("https://swapi.dev/api/people/4/")
+       .then(response => {
+         if(response.status === 404) {
+           text.innerText = `${response.status} ${response.statusText}`
+         }
+         return response.json()
+       })
+       .then(data => {
+         console.log(data)
+         data.map(element => {
+           list.innerHTML += `<li>${element.title}</li>`
+         })
+       })
+       .catch(error => {
+         console.log(error)
+       })
+   </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS</title>
+</head>
+<body>
+<!-- <button onclick="handleClick()" id="btn">click</button> -->
+<!-- <button onclick="handleClick()" id="red">red</button> -->
+<!-- <h1 id="text"></h1> -->
+
+<!-- <button id="minus">-</button>
+<span id="number">1</span>
+<button id="plus">+</button>
+    <span id="price">100 сом</span>
+    <input id="input" type="text" > -->
+
+    <button onclick="addInput()" id="add">add</button>
+    <input id="colc1" type="text">
+    <input id="colc2" type="text">
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <button id="kob">*</button>
+    <button id="bol">/</button>
+    <span id="result">result: </span>
+  <script>
+    //события
+    //onclick onchange onkeypress onkeydown onekeyup onsumbit onblur onfocus
+
+    // 1 variant
+    // let btn = document.getElementById('btn');
+    // btn.onclick = (() => {
+    //   console.log('click')
+    // })
+
+    // 2 variant
+    // const handleClick = () => {
+    //   console.log('click')
+    // }
+
+    // 3 variant
+    // btn.addEventListener('click', () => {
+    //   console.log('click')
+    // })
+
+    // let btn = document.getElementById('btn')
+    // let text = document.getElementById('text')
+    // let i = 0
+    // const handleClick = () => {
+    //   text.innerText = i
+    //   console.log('click')
+    //   if(i === 15){
+    //     i = 0
+    //   }else{
+    //     i++
+    //   }
+    // }
+
+    // let red = document.getElementById('red')
+    // let colors= ['red','black','orange','yellow','pink','blue'];
+    // let a = 0
+    // let text = document.getElementById('text')
+    // const handleClick = () => {
+    //   red.innerText = colors[a]
+    //   document.body.style.backgroundColor = colors[a]
+    //   if(a === 5){
+    //     a = 0
+    //   }else{
+    //     a++
+    //   }
+    // }
+ 
+    // let  minus = document.getElementById('minus')
+    // let plus = document.getElementById('plus')
+    // let number = document.getElementById('number')
+    // let price = document.getElementById('price')
+    // let i = 1;
+    // let a = 100;
+    // minus.onclick = () => {
+    //   if(i === 1){
+    //     i = 1
+    //   }else{
+    //     i--
+    //   }
+    //   if(a === 100){
+    //     a = 100
+    //   }else{
+    //     a-=100
+    //   }
+    //   number.innerText = i 
+    //   price.innerText = `${a}som`
+    // };
+    // plus.onclick = () => {
+    //   a+=100
+    //   i++
+    //   number.innerText = i
+    //   price.innerText = `${a}som`
+    // };
+
+    let colc1 = document.getElementById('colc1')
+    let colc2 = document.getElementById('colc2')
+    let minus = document.getElementById('minus')
+    let plus = document.getElementById('plus')
+    let kob = document.getElementById('kob')
+    let bol = document.getElementById('bol')
+    let result = document.getElementById('result')
+    plus.onclick = () => {
+      result.innerText = `result: ${(+colc1.value) + (+colc2.value)}`
+    }
+    minus.onclick = () => {
+      result.innerText = `result: ${(+colc1.value) - (+colc2.value)}`
+    }
+    kob.onclick = () => {
+      result.innerText = `result: ${(+colc1.value) * (+colc2.value)}`
+    }
+    bol.onclick = () => {
+      result.innerText = `result: ${(+colc1.value) / (+colc2.value)}`
+    }
+
+  </script>
+</body>
+</html>

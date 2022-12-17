@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<input id="input" type="text">
+<h1 id="text"></h1>
+<button id="set">set</button>
+<button id="get">get</button>
+<button id="remove">remove</button>
+  <script>
+    let input = document.getElementById('input')
+    let text = document.getElementById('text')
+    let set = document.getElementById('set')
+    let get = document.getElementById('get')
+    let remove = document.getElementById('remove')
+    set.onclick = () => {
+     localStorage.setItem('key',input.value)
+     input.value = ''
+    }
+    get.onclick = () => {
+     text.innerText = localStorage.getItem('key')
+    }
+    remove.onclick = () => {
+     localStorage.removeItem('key')
+     text.innerText = ''
+    }
+    // let a = 'Asan';
+    // localStorage.setItem('key',a)
+    // localStorage.setItem('key', 'Uson')
+    // let text = document.getElementsByTagName('h1')[0]
+    // let text2 = document.getElementsByTagName('h2')[0]
+    // localStorage.setItem('key',a)
+    // localStorage.setItem('key2',  'Uson')
+    // let getText = localStorage.getItem('')
+    // let getText2 = localStorage.getItem()
+    // localStorage.removeItem('key')
+    // text.innerText = getText
+    // text2.innerText = getText2
+
+    let object = {
+      name: 'Asan',
+      age: 25
+    }
+    localStorage.setItem('object',JSON.stringify(object))
+    let getData = JSON.parse(localStorage.getItem('object'))
+    console.log(getData.name)
+    text.innerText = getData.age
+  </script>
+</body>
+</html>

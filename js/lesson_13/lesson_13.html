@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kenia&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Kenia&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Diplomata+SC&family=Kenia&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+<title>JS</title>
+  <style>
+    @font-face {
+      font-family: 'Kenia', cursive;
+      src: url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+    }
+    @font-face {
+      font-family: 'La Belle Aurore', cursive;
+      src: url('https://fonts.googleapis.com/css2?family=Kenia&family=La+Belle+Aurore&display=swap');
+    }
+    @font-face {
+      font-family: 'Diplomata SC', cursive;
+      src: url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Kenia&family=La+Belle+Aurore&display=swap');
+    }
+    @font-face {
+      font-family: 'Dancing Script', cursive;
+      src: url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Diplomata+SC&family=Kenia&family=La+Belle+Aurore&display=swap');
+    }
+    h1{
+      display: flex;
+      justify-content: center;
+     
+    }
+    div{
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+    }
+  </style>
+</head>
+<body>
+  <!-- <input id="input" placeholder="text" type="text">
+  <button id="add">add</button>
+  <ul id="list"></ul> -->
+  <h1 id="texts">hello</h1>
+  <div class="btn">
+   <button id="color">color</button>
+   <button id="font">font</button>
+  </div>
+  <script>
+    // let input = document.getElementById('input');
+    // let add = document.getElementById('add');
+    // let list = document.getElementById('list');
+    // let arr = [1,2,3,4,5,6,7,8,9,10];
+    // arr.map = ((elem, index) => {
+    //   list.innerHTML += `<li>${elem}<button>delate</button></li>`
+    // })
+    // add.onclick = () => {
+    //   list.innerHTML += `<li>${input.value}</li>`;
+    //   input.value = "";
+    // };
+
+   let text = prompt('text')
+   let texts = document.getElementById('texts')
+   let btn = document.getElementsByClassName('btn')
+   let color = document.getElementById('color')
+   let colors = ['red', 'yellow', 'blue', 'pink'];
+   let a = 0;
+   let font = document.getElementById('font')
+   let fonts = ['Kenia','La Belle Aurore','Diplomata SC','Dancing Script',]
+   let c = 0
+
+   color.onclick = () => {
+    texts.style.color = colors[a]
+   if(a === 3){
+    a = 0
+   }else{
+    a++
+   }
+   }
+ 
+   font.onclick = () => {
+    texts.style.fontFamily = fonts[c]
+    if(c === 3){
+      c =0
+    }else{
+      c++
+    }
+   }
+
+   texts.onclick = () => {
+    texts.innerText = text
+    texts.innerText = prompt('text')
+   }
+   
+   text.onclick = () => {
+    text.innerText = btn[a,c]
+   }
+  </script>
+</body>
+</html>

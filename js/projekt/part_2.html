@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/d740c34394.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="main">
+      <span class="main1">
+        <p>Luxe</p>
+      </span>
+      <span class="main2">
+        <i class="fa-light fa-user"></i>
+        my accaunt
+        <i class="fa-regular fa-heart"></i>
+        Favourites
+        <i class="fa-sharp fa-solid fa-briefcase"></i>
+        bag
+      </span>
+    </div>
+  </header>
+  <section>
+    <div class="menu">
+      <ul class="words">
+        <li><a href="file:///C:/Users/Professional/Desktop/html/js/projekt/.html">New</a></li>
+        <li><a href="">Souvenirs</a></li>
+        <li><a href="">Honey</a></li>
+        <li><a href="">Kids</a></li>
+        <li><a href="">Magazine</a></li>
+      </ul>
+      <input class="search" placeholder="Search for products" type="text">
+    </div>
+  </section>
+  <section>
+    <p class="p1">Home - Handcrafts</p>
+    <p class="p2"><strong>Handcrafts</strong></p>
+    <p class="p3">09 projects</p>
+  </section>
+  <section>
+    <div class="imdq">
+    <div class="surot">
+      <img src="./images/image 5.png" alt="">
+      <p>Shyrdak</p>
+      <h1>23.000$</h1>
+      <i id="heart1" class="fa-solid fa-heart"></i>
+    </div>
+    <div class="surot2">
+      <img src="./images/image 6.png" alt="">
+      <p>Shyrdak</p>
+      <h1>23.000$</h1>
+      <i id="heart2" class="fa-solid fa-heart"></i>
+    </div>
+    <div class="surot3">
+      <img src="./images/image 7.png" alt="">
+      <p>Luxe 2 series</p>
+      <h1>23.000$</h1>
+      <i id="heart3" class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="imdq1">
+    <div class="surot4">
+      <img src="./images/image 8.png" alt="">
+      <p>Shoper</p>
+      <h1>23.000$</h1>
+      <i id="heart4" class="fa-solid fa-heart"></i>
+    </div>
+    <div class="surot5">
+      <img src="./images/image 9.png" alt="">
+      <p>Luxe 2 series</p>
+      <h1>23.000$</h1>
+      <i id="heart5" class="fa-solid fa-heart"></i>
+    </div>
+    <div class="surot6">
+      <img src="./images/image 10.png" alt="">
+      <p>Luxe 2 series</p>
+      <h1>23.000$</h1>
+      <i id="heart6" class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  <div class="imdq2">
+    <div class="surot7">
+      <img src="./images/image 11.png" alt="">
+      <p>Luxe 2 series</p>
+      <h1>23.000$</h1>
+      <i id="heart7" class="fa-solid fa-heart"></i>
+    </div>
+    <div class="surot8">
+      <img src="./images/image 12.png" alt="">
+      <p>Luxe 2 series</p>
+      <h1>23.000$</h1>
+      <i id="heart8" class="fa-solid fa-heart"></i>
+    </div>
+    <div class="surot9">
+      <img src="./images/unsplash_qS3sqPT1T9s.png" alt="">
+      <p>Shopper</p>
+      <h1>23.000$</h1>
+      <i id="heart9" class="fa-solid fa-heart"></i>
+    </div>
+  </div>
+  </section>
+  <section>
+    <div class="btn">
+    <button class="button">load more</button>
+  </div>
+  </section>
+  <footer>
+    <div class="foot">
+    <div class="first-let">
+      <p><strong>Luxe</strong></p>
+      <p>Copyright © 2021 Luxe</p>
+      <p>All rights reserved</p>
+      <span class="spanz">
+        <i class="fa-brands fa-instagram"></i>
+      </span>
+      <span class="spanz">
+        <i class="fa-solid fa-atom-simple"></i>
+      </span>
+      <span class="spanz">
+        <i class="fa-brands fa-twitter"></i>
+      </span>
+      <span class="spanz">
+        <i class="fa-brands fa-youtube"></i>
+      </span>
+    </div>
+    <div class="second-let">
+      <p><strong>Company</strong></p>
+      <p>Blog</p>
+      <p>Pricing</p>
+      <p>About us</p>
+      <p>Contact us</p>
+      <p>Testimonials</p>
+    </div>
+    <div class="third-let">
+      <p>Legal policy</p>
+      <p>Status policy</p>
+      <p>Privacy policy</p>
+      <p>Terms of service</p>
+    </div>
+    <div class="four-let">
+      <p><strong>Get updates</strong></p>
+      <input placeholder="Enter your email" type="text">
+    </div>
+  </div>
+  </footer>
+  
+  <script>
+let heart1 = document.getElementById('heart1')
+let heart2 = document.getElementById('heart2')
+let heart3 = document.getElementById('heart3')
+let heart4 = document.getElementById('heart4')
+let heart5 = document.getElementById('heart5')
+let heart6 = document.getElementById('heart6')
+let heart7 = document.getElementById('heart7')
+let heart8 = document.getElementById('heart8')
+let heart9 = document.getElementById('heart9')
+let colors = ['red','rgb(10, 18, 36)']
+let a = 0
+heart1.onclick = () => {
+  heart1.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+heart2.onclick = () => {
+  heart2.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+heart3.onclick = () => {
+  heart3.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+heart4.onclick = () => {
+  heart4.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+heart5.onclick = () => {
+  heart5.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+heart6.onclick = () => {
+  heart6.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+heart6.onclick = () => {
+  heart6.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+heart7.onclick = () => {
+  heart7.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+heart8.onclick = () => {
+  heart8.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+heart9.onclick = () => {
+  heart9.style.color = colors[a]
+  if(a === 1){
+    a = 0
+  }else{
+    a++
+  }
+}
+  </script>
+</body>
+</html>

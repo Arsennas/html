@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    } 
+    /* div{
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+    } */
+    /* img{
+      width: 300px;
+      height: 300px;
+      display: none;
+    } */ 
+    /* .btn{
+      color: red;
+    } 
+    div{
+      width: 100px;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="image">
+    <button id="left">
+      < </button>
+        <img id="img"
+          src="https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/10/1200/675/barcelona.jpg?ve=1&tl=1"
+          alt="">
+        <button id="right"> > </button>
+  </div>
+  <div>
+    <img onclick="myFunc(0)" id="img1"
+      src="https://www.fcbarcelona.com/photo-resources/2022/11/18/1b9424b9-c38c-4b50-b959-cf6358064950/mini_all-convos.png?width=640&height=400"
+      alt="">
+    <img onclick="myFunc(1)" id="img2"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUFmanuACssnJGBQVbtdYUmYrmU8Ee8BXaw&usqp=CAU" alt="">
+    <img onclick="myFunc(2)" id="img3"
+      src="https://play-lh.googleusercontent.com/CFmRI0Zfk4rRu7x-wQwme6kbHcqe_VIJNK5uUaqyIqUc5QxxhzCjyqZQSDzZNwY34Yk"
+      alt="">
+    <img onclick="myFunc(3)" id="img4"
+      src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2021_31/3496998/210805-lionel-messi-barcelona-mn-1415.jpg"
+      alt=""> -->
+
+    
+      <!-- <button class="btn" onclick="btn()">click</button>
+      <div id="div"></div>
+    </div> 
+
+    <div>
+     <div class="c1">
+    <button id="cat">cat</button>
+    <img id="ca1" src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg" alt="">
+    </div>
+    <div class="c2">
+      <button id="dog">dog</button>
+      <img id="dog1" src="https://www.humanesociety.org/sites/default/files/styles/1240x698/public/2022-10/dog-583007.jpg?h=c6dbd090&itok=uY9_vnXo" alt="">
+    </div>
+    <div class="c3">
+      <button id="tiger">tiger</button>
+      <img id="tiger1" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Walking_tiger_female.jpg" alt="">
+    </div>
+  </div> -->
+  <script>
+    let img = document.getElementById('img')
+    let left = document.getElementById('left')
+    let right = document.getElementById('right')
+    let div = document.getElementsByClassName('div')
+    let images = [
+      'https://www.fcbarcelona.com/photo-resources/2022/11/18/1b9424b9-c38c-4b50-b959-cf6358064950/mini_all-convos.png?width=640&height=400', 
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVUFmanuACssnJGBQVbtdYUmYrmU8Ee8BXaw&usqp=CAU', 
+      'https://play-lh.googleusercontent.com/CFmRI0Zfk4rRu7x-wQwme6kbHcqe_VIJNK5uUaqyIqUc5QxxhzCjyqZQSDzZNwY34Yk', 
+      'https://media-cldnry.s-nbcnews.com/image/upload/t_fit-760w,f_auto,q_auto:best/newscms/2021_31/3496998/210805-lionel-messi-barcelona-mn-1415.jpg']
+    let a = 0
+
+    left.onclick = () => {
+      img.src = images[a]
+      if (a === 3) {
+        a = 0
+      } else {
+        a++
+      }
+    }
+    right.onclick = () => {
+      img.src = images[a]
+      if (a === 3) {
+        a = 0
+      } else {
+        a++
+      }
+    }
+    function myFunc(index){
+      img.src = images[index]
+    }
+     
+  //   let button = document.getElementsByTagName('button')[0]
+  //   let div = document.getElementById('div')
+   
+  //  let active = false; 
+  //  const btn = () => {
+  //   active = !active;
+  //   if(active){
+  //     div.classList.add('box');
+  //   }else{
+  //     div.classList.remove('box')
+  //   }
+  //  }
+  </script>
+</body>
+
+</html>

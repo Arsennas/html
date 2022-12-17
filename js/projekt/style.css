@@ -1,0 +1,386 @@
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+.main1{
+  margin-left: 45px;
+}
+.main1 p{
+  color: black;
+  font-size: 20px;
+}
+.main2{
+  display: flex;
+  gap: 25px;
+  margin-right: 56px;
+  margin-top: 20px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+.words{
+  display: flex;
+  gap: 30px;
+  padding-right: 20px;
+  margin-left: 5px;
+}
+.words li{
+  display: inline;
+}
+.search{
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 56px;
+}
+.image{
+background-image: url(./images/Rectangle\ 18\ \(1\).png);
+background-repeat: no-repeat;
+background-size: cover;
+margin-left: 40px;
+width: 1380px;
+height: 728px;
+padding-left: 60px;
+padding-top: 80px;
+margin-top: 70px;
+}
+.its{
+  font-size: 35px;
+}
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.about p{
+  font-size: 50px;
+  color: black;
+}
+.image1{
+  background-image: url(./images/image\ 2.png);
+  background-repeat: no-repeat;
+  width: 485px;
+height: 728px;
+}
+.image1 p,.image2 p,.image3 p{
+  padding-top: 540px;
+  padding-left: 40px;
+  color: white;
+}
+.image2{
+  background-image: url(./images/image\ 3.png);
+  background-repeat: no-repeat;
+  width: 485px;
+height: 728px;
+}
+.image3{
+  background-image: url(./images/image\ 4.png);
+  background-repeat: no-repeat;
+  width: 435px;
+height: 728px;
+}
+.images{
+  display: flex;
+  margin-left: 60px;
+}
+.redd{
+  display: flex;
+  align-items: center;
+}
+.imagee{
+  background-image: url(./images/Image.png);
+  background-repeat: no-repeat;
+  width: 733px;
+height: 724px;
+margin-left: 60px;
+margin-right: -90px;
+}
+.about-us{
+  background-color: #1F2937;
+  padding: 20px;
+width: 624px;
+height: 198px;
+}
+.about-us p{
+  color: whitesmoke;
+}
+.about-us b{
+  color: white;
+  font-size: 20px;
+}
+.first{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.second{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: black;
+}
+.block-main{
+  display: flex;
+  justify-content: space-around;
+transition: 1s;
+
+}
+.block{
+width: 305px;
+height: 185px;
+background-color: white;
+padding: 10px;
+display: flex;
+align-items: center;
+}
+.block-main :hover{
+  background-color: red;
+  color: white;
+}
+.imagew{
+  display: flex;
+  justify-content: space-around;
+}
+.foot{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+.spanz{
+  background-color:gray;
+  color: white;
+  padding: 0 15px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.p1{
+  margin-left: 45px;
+}
+.p2{
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+}
+.p3{
+  margin-left: 45px;
+}
+.imdq,.imdq1,.imdq2{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.imdq p,.imdq1 p,.imdq2 p {
+  color: black;
+  font-size: 35px;
+  margin: 5px;
+}
+.imdq h1,.imdq1 h1,.imdq2 h1 {
+font-size: small;
+margin: 5px;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+}
+.button{
+  width: 361px;
+height: 68px;
+background-color: red;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.copo{
+  display: flex;
+}
+.div1{
+  margin-left: 40px;
+}
+.div2{
+  margin-left: 130px;
+}
+.ra{
+  font-size: small;
+  color: black;
+  margin: 0;
+}
+.re{
+  font-size: 28px;
+  color: black;
+  margin: 0;
+}
+.h12{
+  font-size: medium;
+}
+.inform1{
+  display: flex;
+  color: gray;
+  gap: 10px;
+}
+.tyo p{
+  color: gray;
+}
+.colors{
+  display: flex;
+  gap: 10px;
+}
+.colors span{
+width: 15px;
+height: 15px;
+border: 2px solid black;
+}
+.box1{
+  background-color: #F9A8D4;
+}
+.box2{
+  background-color: plum;
+}
+.box3{
+  background-color:#EF4444;
+}
+.box4{
+  background-color: yellow;
+}
+.size p {
+  color: gray;
+}
+.buttons{
+  display: flex;
+}
+.buttons button{
+  margin-right: 35px;
+  height: 40px;
+  width: 150px;
+  background-color: white;
+}
+.uuuu p{
+  color: gray;
+}
+.this1{
+  width: 305px;
+height: 38px;
+background-color: #1F2937;
+margin-bottom: 10px;
+color: white;
+}
+.this2{
+  width: 305px;
+  height: 38px;
+}
+.uy{
+  display: flex;
+  margin-left: 27px;
+}
+.uy button{
+  border: none;
+  background-color: white;
+  color: gray;
+}
+.qqq {
+  font-size: 30px;
+  color: black;
+  margin-left: 42px;
+  margin-top: 0;
+}
+.photo img{
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.main-two-parts{
+  display: flex;
+  justify-content: space-between;
+}
+.pert-white{
+  display: flex;
+  flex-direction: column;
+  margin-top: 31px;
+}
+.photo{
+  display: flex;
+}
+.texts{
+  margin-left: 60px;
+}
+.texts .tred {
+color: black;
+font-size: 25px;
+}
+.texts p{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.boxp{
+  width: 400px;
+height: 540px;
+background-color: #F9FAFB;
+margin-right: 51px;
+}
+.aaaa{
+  margin-left: 500px;
+}
+.text-input{
+  margin-left: 500px;
+  margin-bottom: 110px;
+}
+.iiiau p{
+  font-size: 30px;
+  color: black;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.poiuw{
+  display: flex;
+  padding-left: 28px;
+  gap: 120px;
+}
+.tyre{
+  display: flex;
+  padding-left: 28px;
+  gap: 120px;
+}
+.qwssfd{
+  display: flex;
+  padding-left: 28px;
+  gap: 150px;
+}
+.power{
+  padding-top: 150px;
+}
+.six{
+  display: flex;
+}
+.texts p{
+  color: gray;
+}
+.six .poi{
+  color: black;
+}
+.six .opi{
+  margin-left: 10px;
+  color: red;
+}
+.total{
+  display: flex;
+  padding-left: 28px;
+  gap: 135px;
+}
+.lol{
+  font-size: large;
+  color: black;
+}
+.bution{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+.bution button{
+  background-color: #111827;
+  width: 336px;
+height: 56px;
+color: white;
+}
